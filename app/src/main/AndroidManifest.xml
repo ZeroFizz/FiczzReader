@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.helw.m.ficzzreader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.helw.m.ficzzreader.app.FiczzReaderApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_cloudreader"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.helw.m.ficzzreader.ui.login.TransitionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewBigPicTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.helw.m.ficzzreader.ui.login.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewBigPicTheme" />
+        <activity
+            android:name="com.helw.m.ficzzreader.ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.menu.NavHomePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.menu.NavDownloadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.menu.NavDeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.webview.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.menu.NavAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.viewbigimage.ViewBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewBigPicTheme" />
+
+        <activity
+            android:name=".ui.one.OneMovieDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyScrollPage" />
+
+        <activity
+            android:name=".ui.one.DoubanTopActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyScrollPage" />
+
+        <activity
+            android:name=".ui.book.child.BookDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyScrollPage" />
+
+    </application>
+
+</manifest>
